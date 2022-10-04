@@ -44,7 +44,7 @@ amount_invested_monthly = st.slider(label="Amount invested monthly", min_value=0
 
 if st.button("Click for Rating"):
 
-    input_row = [age, annual_income, monthly_inhand_salary, num_bank_accounts, num_credit_card, num_of_loan, num_credit_inquiries, credit_mix, outstanding_debt, credit_utilization_ratio, credit_history_age, payment_of_min_amount, amount_invested_monthly]
+    input_row = [age, annual_income, monthly_inhand_salary, num_bank_accounts, num_credit_card, num_of_loan, num_credit_inquiries, outstanding_debt, credit_utilization_ratio, credit_history_age, payment_of_min_amount, amount_invested_monthly]
 
     input = new_test_sample = pd.DataFrame(dict(zip(col_names,input_row)),index=[0])
     st.write(input)
