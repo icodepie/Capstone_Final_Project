@@ -45,5 +45,5 @@ if st.button("Click for Rating"):
     input = new_test_sample = pd.DataFrame(dict(zip(col_names,input_row)),index=[0])
     st.write(input)
 
-    loaded_model = pickle.load(open("xgb_final_model.sav", 'rb'))
+    loaded_model = pickle.load(open("streamlit_model.sav", 'rb'))
     st.write(loaded_model.predict(input))
