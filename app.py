@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-
+import sklearn
 st.write("# Credit score simulator")
 
 st.write("## Describe inputs")
