@@ -4,3 +4,4 @@ pandas==1.3.4
 xgboost==1.6.2
 scikit-learn
 sklearn
+PyQt5==5.15.7
