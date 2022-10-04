@@ -7,12 +7,13 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer,  make_column_selector as selector
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransformer
+
 st.write("# Credit score simulator")
 
 st.write("## Describe inputs")
 
 col_names = ['Age', 'Annual_Income', 'Monthly_Inhand_Salary', 'Num_Bank_Accounts',
-       'Num_Credit_Card', 'Num_of_Loan', 'Num_Credit_Inquiries', 'Credit_Mix',
+       'Num_Credit_Card', 'Num_of_Loan', 'Num_Credit_Inquiries',
        'Outstanding_Debt', 'Credit_Utilization_Ratio', 'Credit_History_Age',
        'Payment_of_Min_Amount', 'Amount_invested_monthly']
      
@@ -29,8 +30,6 @@ num_credit_card = st.slider(label="Number of credit cards", min_value=0, max_val
 num_of_loan = st.slider(label="Number of loans", min_value=0, max_value=20, value=1, step=1)
 
 num_credit_inquiries = st.slider(label="Number of credit inquiries", min_value=0, max_value=20, value=1, step=1)
-
-credit_mix = st.selectbox(label="Credit mix", options=["Good", "Bad","Standard"])
 
 outstanding_debt = st.slider(label="Outstanding debt", min_value=0, max_value=250000, value=100000, step=100)
 
