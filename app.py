@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import pickle
 import sklearn
+from xgboost import XGBClassifier,XGBRegressor
+from sklearn.impute import SimpleImputer
+from sklearn.compose import ColumnTransformer,  make_column_selector as selector
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransformer
 st.write("# Credit score simulator")
 
 st.write("## Describe inputs")
