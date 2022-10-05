@@ -3,14 +3,24 @@
 
 
 
+## **Steps for reproducing model**
 
+1. Running the Cleaned_Data.ipynb
+2. Running the Final_Modeling_Process.ipynb this will reproduce the model with more features added (Saved as xgb_final_model.sav)
 
+## **Steps for streamlit model**
+1. Running the Cleaned_Data.ipynb
+2. Running the Streamlit_final_model.ipynb this will reproduce simpler model used on Streamlit (Saved as xgb_final_model.sav)
+
+## **Link to Streamlit Credit Rating App**
+https://icodepie-capstone-final-project-app-dzrgb4.streamlitapp.com/
 
 
 
 ## **Project Overview:**
 
 The goal of this project was to create a machine learning model that could accurately predict a user's credit score rating into three categories, “Poor”,”Standard”, and “Good”, based on features provided by the dataset from [Kaggle](https://www.kaggle.com/datasets/parisrohan/credit-score-classification). 
+
 
 
 ## **Business Problem:**
