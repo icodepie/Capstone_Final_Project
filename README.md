@@ -10,7 +10,7 @@
 
 ## **Steps for streamlit model**
 1. Running the Cleaned_Data.ipynb
-2. Running the Streamlit_final_model.ipynb this will reproduce simpler model used on Streamlit (Saved as xgb_final_model.sav)
+2. Running the Streamlit_final_model.ipynb this will reproduce a simpler model with less features used on Streamlit (Saved as streamlit_model.sav)
 
 ## **Link to Streamlit Credit Rating App**
 https://icodepie-capstone-final-project-app-dzrgb4.streamlitapp.com/
