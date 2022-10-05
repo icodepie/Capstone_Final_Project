@@ -53,8 +53,10 @@ if st.button("Click for Rating"):
     pred = loaded_model.predict(input)
     if pred == "Poor":
         st.write("# Credit score is Poor")
-        st.write("## But it can me improved!")
+        st.write("## But have no fear, it can me improved!")
     elif pred == "Standard":
-        st.write("## Credit score is Standard we're on our way")
+        st.write("# Credit score is Standard")
+        st.write("## We're on our way!")
     elif pred == "Good":
-        st.write("## Credit score is Good, keep it up!")
+        st.write("# Credit score is Good")
+        st.write("## Keep up the great work!")
