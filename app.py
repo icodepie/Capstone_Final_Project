@@ -50,4 +50,10 @@ if st.button("Click for Rating"):
     st.write(input)
 
     loaded_model = pickle.load(open("streamlit_model.sav", 'rb'))
-    st.write(loaded_model.predict(input))
+    pred = loaded_model.predict(input)
+    if pred == "Poor":
+        st.write("## Credit score is Poor but it can be improved!")
+    elif pred == "Standard":
+        st.write("## Credit score is Standard we're on our way")
+    elif pred == "Good":
+        st.write("## Credit score is Good, keep it up!")
